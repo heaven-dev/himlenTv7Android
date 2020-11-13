@@ -13,4 +13,24 @@
     <string name="coming_on_channel">Kommande program på kanalen</string>
     <string name="today">I dag</string>
 
+    <string name="net_tv">TV-kanal</string>
+    <string name="archive">Play-arkiv</string>
+    <string name="guide">Tablå</string>
+    <string name="search">Sök</string>
+
+    <string name="we_recommend">Rekommenderat i arkivet</string>
+    <string name="most_viewed">Populärast just nu</string>
+    <string name="newest">Senaste</string>
+    <string name="categories">Kategorier</string>
+    <string name="category">Kategori</string>
+    <string name="series">Programserie</string>
+
+    <string name="first_broadcast">Första sändningen</string>
+    <string name="duration">Längd</string>
+    <string name="episode">Avsnitt</string>
+
+    <string name="back">Tillbaka</string>
+    <string name="do_search">Sök</string>
+    <string name="clear">Radera</string>
+    <string name="search_results">Sökresultat</string>
 </resources>

@@ -1,4 +1,4 @@
-package sv.tv7.himlentv7.helpers;
+package sv.tv7.himlentv7.enums;
 
 /**
  * Helper enum.
