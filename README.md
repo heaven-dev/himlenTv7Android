@@ -1,13 +1,5 @@
 # himlenTv7Android
 
-## Branches
-
-| Features | Branch |
-| :-------------- | :-------------- |
-| TV channel only | [master](https://github.com/heaven-dev/himlenTv7Android) |
-| TV channel and video archive | [channelAndArchive](https://github.com/heaven-dev/himlenTv7Android/tree/channelAndArchive) |
-
-
 ## Overview
 
 [TV7](https://www.himlentv7.se/) Android smart TV application. This application locale is __sv__ (Swedish). Application make possible to watch TV channel and videos from the video archive.
