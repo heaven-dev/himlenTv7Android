@@ -8,6 +8,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
 import static sv.tv7.himlentv7.helpers.Constants.LOG_TAG;
+import static sv.tv7.himlentv7.helpers.Constants.VOLLEY_CACHE;
 
 /**
  * Application class. Implements volley request queue functionality.
@@ -76,6 +77,7 @@ public class HimlenTv7 extends Application {
             Log.d(LOG_TAG, "HimlenTv7.addToRequestQueue() called.");
         }
 
+        req.setShouldCache(VOLLEY_CACHE);
         req.setTag(TAG);
         getRequestQueue().add(req);
     }

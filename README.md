@@ -10,7 +10,7 @@
 
 ## Overview
 
-[TV7](https://www.himlentv7.se/) Android smart TV application. This application locale is __sv__ (Swedish). Application make possible to watch TV channel.
+[TV7](https://www.himlentv7.se/) Android smart TV application. This application locale is __sv__ (Swedish). Application make possible to watch TV channel and videos from the video archive.
 
 Developer pages of [Android TV](https://developer.android.com/tv).
 Guide of [Android TV](https://developer.android.com/training/tv).
