@@ -17,6 +17,7 @@
     <string name="archive">Play-arkiv</string>
     <string name="guide">Tablå</string>
     <string name="search">Sök</string>
+    <string name="favorites">Suosikit</string>
 
     <string name="we_recommend">Rekommenderat i arkivet</string>
     <string name="most_viewed">Populärast just nu</string>
@@ -33,4 +34,9 @@
     <string name="do_search">Sök</string>
     <string name="clear">Radera</string>
     <string name="search_results">Sökresultat</string>
+
+    <string name="no_hits">Ei hakuosumia</string>
+    <string name="no_favorites">Ei lisättyjä suosikkeja</string>
+    <string name="added_to_favorites">Lisätty suosikkeihin</string>
+    <string name="removed_from_favorites">Poistettu suosikeista</string>
 </resources>
