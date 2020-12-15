@@ -31,6 +31,7 @@ import java.util.TimeZone;
 
 import sv.tv7.himlentv7.BuildConfig;
 import sv.tv7.himlentv7.R;
+import sv.tv7.himlentv7.fragments.AboutFragment;
 import sv.tv7.himlentv7.fragments.ArchiveMainFragment;
 import sv.tv7.himlentv7.fragments.ArchivePlayerFragment;
 import sv.tv7.himlentv7.fragments.CategoriesFragment;
@@ -44,6 +45,7 @@ import sv.tv7.himlentv7.fragments.SeriesFragment;
 import sv.tv7.himlentv7.fragments.TvMainFragment;
 import sv.tv7.himlentv7.fragments.TvPlayerFragment;
 
+import static sv.tv7.himlentv7.helpers.Constants.ABOUT_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.ARCHIVE_MAIN_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.ARCHIVE_PLAYER_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.CATEGORIES_FRAGMENT;
@@ -206,6 +208,9 @@ public abstract class Utils {
                 }
                 else if (page.equals(FAVORITES_FRAGMENT)) {
                     fragment = FavoritesFragment.newInstance();
+                }
+                else if (page.equals(ABOUT_FRAGMENT)) {
+                    fragment = AboutFragment.newInstance();
                 }
                 else if (page.equals(EXIT_OVERLAY_FRAGMENT)) {
                     fragment = ExitFragment.newInstance();
