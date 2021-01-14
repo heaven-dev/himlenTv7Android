@@ -31,6 +31,7 @@
     <string name="first_broadcast">Första sändningen</string>
     <string name="duration">Längd</string>
     <string name="episode">Avsnitt</string>
+    <string name="aspect_ratio">Bildförhållande</string>
 
     <string name="back">Tillbaka</string>
     <string name="do_search">Sök</string>
