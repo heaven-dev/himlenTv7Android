@@ -1,3 +1,16 @@
+# 28.01.2021 17:21
+
+### Bug Fixes
+
+* none
+
+### Features
+
+* Category item logo changed to channel logo on archive main page.
+* Border of keys of virtual keyboard changed.
+* Version number to 5.
+
+
 # 19.01.2021 16:19
 
 ### Bug Fixes
