@@ -22,6 +22,7 @@ import sv.tv7.himlentv7.R;
 import sv.tv7.himlentv7.helpers.Utils;
 
 import static sv.tv7.himlentv7.helpers.Constants.CAPTION;
+import static sv.tv7.himlentv7.helpers.Constants.EMPTY;
 import static sv.tv7.himlentv7.helpers.Constants.IMAGE_PATH;
 import static sv.tv7.himlentv7.helpers.Constants.ONE_STR;
 import static sv.tv7.himlentv7.helpers.Constants.ONGOING_PROGRAM;
@@ -148,8 +149,11 @@ public class GuideGridAdapter extends RecyclerView.Adapter<GuideGridAdapter.Simp
                 }
 
                 value = Utils.getValue(obj, CAPTION);
-                if (value != null) {
+                if (value != null && value.length() > 0) {
                     holder.caption.setText(value);
+                }
+                else {
+                    holder.caption.setText(EMPTY);
                 }
             }
         }
