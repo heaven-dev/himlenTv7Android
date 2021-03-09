@@ -31,6 +31,8 @@ import sv.tv7.himlentv7.model.SharedCacheViewModel;
 
 import static sv.tv7.himlentv7.helpers.Constants.ARCHIVE_MAIN_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.FAVORITES_FRAGMENT;
+import static sv.tv7.himlentv7.helpers.Constants.FAVORITES_SP_DEFAULT;
+import static sv.tv7.himlentv7.helpers.Constants.FAVORITES_SP_TAG;
 import static sv.tv7.himlentv7.helpers.Constants.ID;
 import static sv.tv7.himlentv7.helpers.Constants.LOG_TAG;
 import static sv.tv7.himlentv7.helpers.Constants.PROGRAM_INFO_FRAGMENT;
@@ -104,7 +106,7 @@ public class FavoritesFragment extends Fragment implements ArchiveDataLoadedList
             menuTexts = Sidebar.getMenuTextItems(root);
             Sidebar.setSelectedMenuItem(root, R.id.favoritesMenuContainer);
 
-            JSONArray jsonArray = Utils.getSavedFavorites(getContext());
+            JSONArray jsonArray = Utils.getSavedPrefs(FAVORITES_SP_TAG, FAVORITES_SP_DEFAULT, getContext());
             if (jsonArray != null) {
                 PageStateItem pageStateItem = sharedCacheViewModel.getFavoritesPageStateItem();
                 if (pageStateItem != null) {
