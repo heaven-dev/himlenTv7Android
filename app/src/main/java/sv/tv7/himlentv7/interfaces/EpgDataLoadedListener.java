@@ -6,6 +6,5 @@ package sv.tv7.himlentv7.interfaces;
 public interface EpgDataLoadedListener {
     void onEpgDataLoaded();
     void onEpgDataLoadError(String message);
+    void onNoNetwork();
 }
-
-
