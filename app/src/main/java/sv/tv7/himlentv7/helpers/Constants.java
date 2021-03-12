@@ -15,7 +15,7 @@ abstract public class Constants {
     public static final String LOG_TAG = "tv7";
 
     public static final boolean VOLLEY_CACHE = false;
-    public static final int VOLLEY_TIMEOUT_VALUE = 60000;
+    public static final int VOLLEY_TIMEOUT_VALUE = 20000;
 
     public static final String STREAM_URL = "https://vod.tv7.fi:443/tv7-se/_definst_/smil:tv7-se.smil/playlist.m3u8";
     public static final String ARCHIVE_BASE_URL = "https://www.himlentv7.se/wp-json/tv7-api/v1/";
