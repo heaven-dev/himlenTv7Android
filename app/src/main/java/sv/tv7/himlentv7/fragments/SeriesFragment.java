@@ -1,6 +1,5 @@
 package sv.tv7.himlentv7.fragments;
 
-import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;

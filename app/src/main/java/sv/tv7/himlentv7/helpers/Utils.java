@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -31,7 +29,6 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 import sv.tv7.himlentv7.BuildConfig;
-import sv.tv7.himlentv7.HimlenTv7;
 import sv.tv7.himlentv7.R;
 import sv.tv7.himlentv7.fragments.AboutFragment;
 import sv.tv7.himlentv7.fragments.ArchiveMainFragment;
@@ -348,32 +345,6 @@ public abstract class Utils {
     public static long stringToLong(String value) {
         return Long.parseLong(value);
     }
-
-    /*
-    public static boolean isConnectedToGateway() {
-        boolean connected = true;
-
-        TaevasTv7 app = TaevasTv7.getInstance();
-        if (app != null) {
-            Activity activity = app.getActivity();
-            if (activity != null) {
-                ConnectivityManager connectivityManager = (ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE);
-                NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-                connected = networkInfo != null && networkInfo.isConnected();
-            }
-
-            if (BuildConfig.DEBUG) {
-                Log.d(LOG_TAG, "Utils.isConnectedToGateway():  Is connected: " + connected);
-            }
-
-            if (!connected) {
-                app.setErrorCode(NO_NETWORK_CONNECTION_ERROR);
-            }
-        }
-
-        return connected;
-    }
-    */
 
     public static JSONArray getSavedPrefs(String tag, String defaultValue, Context context) throws Exception {
         JSONArray jsonArray = null;
