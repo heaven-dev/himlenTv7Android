@@ -49,6 +49,7 @@ import static sv.tv7.himlentv7.helpers.Constants.DASH_WITH_SPACES;
 import static sv.tv7.himlentv7.helpers.Constants.DOT;
 import static sv.tv7.himlentv7.helpers.Constants.GUIDE_TIMER_TIMEOUT;
 import static sv.tv7.himlentv7.helpers.Constants.LOG_TAG;
+import static sv.tv7.himlentv7.helpers.Constants.NO_NETWORK_CONNECTION_ERROR;
 import static sv.tv7.himlentv7.helpers.Constants.PAUSE_START_ICON_ANIMATION_DURATION;
 import static sv.tv7.himlentv7.helpers.Constants.PAUSE_START_ICON_ANIMATION_END;
 import static sv.tv7.himlentv7.helpers.Constants.PAUSE_START_ICON_ANIMATION_START;
@@ -376,7 +377,7 @@ public class TvPlayerFragment extends Fragment implements Player.EventListener {
                 }
 
                 if (httpError.type == HttpDataSource.HttpDataSourceException.TYPE_OPEN || httpError.type == HttpDataSource.HttpDataSourceException.TYPE_READ) {
-                    HimlenTv7.getInstance().setConnectedToNet(false);
+                    HimlenTv7.getInstance().setErrorCode(NO_NETWORK_CONNECTION_ERROR);
                 }
             }
 

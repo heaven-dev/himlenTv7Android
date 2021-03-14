@@ -1,3 +1,14 @@
+# 14.03.2021 10:02
+
+### Bug Fixes
+
+* none
+
+### Features
+
+* Volley response error handling.
+
+
 # 10.03.2021 13:12
 
 ### Bug Fixes
