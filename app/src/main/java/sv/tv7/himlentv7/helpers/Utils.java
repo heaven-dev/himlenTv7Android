@@ -34,6 +34,7 @@ import sv.tv7.himlentv7.fragments.AboutFragment;
 import sv.tv7.himlentv7.fragments.ArchiveMainFragment;
 import sv.tv7.himlentv7.fragments.ArchivePlayerFragment;
 import sv.tv7.himlentv7.fragments.CategoriesFragment;
+import sv.tv7.himlentv7.fragments.ChannelInfoFragment;
 import sv.tv7.himlentv7.fragments.ErrorFragment;
 import sv.tv7.himlentv7.fragments.ExitFragment;
 import sv.tv7.himlentv7.fragments.FavoritesFragment;
@@ -49,6 +50,7 @@ import static sv.tv7.himlentv7.helpers.Constants.ABOUT_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.ARCHIVE_MAIN_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.ARCHIVE_PLAYER_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.CATEGORIES_FRAGMENT;
+import static sv.tv7.himlentv7.helpers.Constants.CHANNEL_INFO_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.COLON;
 import static sv.tv7.himlentv7.helpers.Constants.DASH;
 import static sv.tv7.himlentv7.helpers.Constants.DOT;
@@ -209,6 +211,9 @@ public abstract class Utils {
                 }
                 else if (page.equals(FAVORITES_FRAGMENT)) {
                     fragment = FavoritesFragment.newInstance();
+                }
+                else if (page.equals(CHANNEL_INFO_FRAGMENT)) {
+                    fragment = ChannelInfoFragment.newInstance();
                 }
                 else if (page.equals(ABOUT_FRAGMENT)) {
                     fragment = AboutFragment.newInstance();

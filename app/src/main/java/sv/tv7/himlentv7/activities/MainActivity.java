@@ -23,6 +23,7 @@ import sv.tv7.himlentv7.fragments.AboutFragment;
 import sv.tv7.himlentv7.fragments.ArchiveMainFragment;
 import sv.tv7.himlentv7.fragments.ArchivePlayerFragment;
 import sv.tv7.himlentv7.fragments.CategoriesFragment;
+import sv.tv7.himlentv7.fragments.ChannelInfoFragment;
 import sv.tv7.himlentv7.fragments.ErrorFragment;
 import sv.tv7.himlentv7.fragments.ExitFragment;
 import sv.tv7.himlentv7.fragments.FavoritesFragment;
@@ -157,6 +158,10 @@ public class MainActivity extends AppCompatActivity implements EpgDataLoadedList
                 else if (fragment instanceof FavoritesFragment) {
                     // Favorites fragment visible
                     return ((FavoritesFragment) fragment).onKeyDown(keyCode, events);
+                }
+                else if (fragment instanceof ChannelInfoFragment) {
+                    // Channel info fragment visible
+                    return ((ChannelInfoFragment) fragment).onKeyDown(keyCode, events);
                 }
                 else if (fragment instanceof AboutFragment) {
                     // About fragment visible

@@ -21,6 +21,7 @@
     <string name="guide">Tablå</string>
     <string name="search">Sök</string>
     <string name="favorites">Favoriter</string>
+    <string name="channel_info">Himlen TV7</string>
     <string name="about">Information</string>
 
     <string name="we_recommend">Rekommenderat i arkivet</string>
@@ -57,4 +58,21 @@
     <string name="network_request_failed">Network request failed :-(</string>
     <string name="network_request_timeout">Network request timeout :-(</string>
     <string name="close">Close</string>
+
+    <string name="title_1">Om oss</string>
+    <string name="title_1_chapter_1">Himlen TV7 är en kristen tv-kanal med bas i Uppsala som riktar sig till Sverige och Svenskfinland. Kanalen sänder 24/7 och erbjuder det största kristna Play-arkivet på svenska med tusentals program att se när du vill. Kanalen vill berätta om Jesus, utrusta Guds folk med Hans Ord och stärka banden till Israel genom nyheter och undervisning. Kanalen är öppen för alla och kan ses på www.himlentv7.se eller gratisappen ”Himlen TV7”, och är nu även tillgänglig på Smart-TV. I Finland finns den även på flera kabeltv-nätverk.</string>
+    <string name="title_1_chapter_2">Himlen TV7 grundades år 2013 och verkade först fem år i Helsingfors och flyttade till Uppsala 2018. Sverigechef är dr Daniela Persin.</string>
+    <string name="title_1_chapter_3">Kanalen är en del av Heaven TV7 Media med fem kanaler på fyra språk samt en egen redaktion i Jerusalem. Mediahuset grundades av Martti och Mirja Ojares år 2003. Huvudkontoret är i Helsingfors.</string>
+
+    <string name="title_2">Organisationen bakom Himlen TV7</string>
+    <string name="title_2_chapter_1">Himlen TV7 drivs av föreningen Korset Stöd i Sverige. Den Finlandsregistrerade föreningen Ristin Tuki bidrar med innehåll och översättning.</string>
+
+    <string name="title_3">Korsets stöd rf</string>
+    <string name="title_3_chapter_1">Korsets stöd rf är en allmännyttig, ideell förening i Sverige. Föreningens vision är att sprida evangeliet bland de svenskspråkiga i Norden speciellt genom elektroniska media.</string>
+    <string name="title_3_chapter_2">Föreningen producerar tjänster för att upprätthålla Himlen TV7:s verksamhet och kan ta emot donationer för detta ändamål. Styrelseordförande är Martti Ojares (f.d. vice VD för Finlands största mediekoncern Sanoma Oy, har erhållit hederstiteln ”Kommunikationsråd” av Finlands president). Verkställande direktör är dr Daniela Persin.</string>
+
+    <string name="title_4">Ristin Tuki ry (rf)</string>
+    <string name="title_4_chapter_1">Ristin Tuki ry (rf) är en ideell registrerad förening med nationellt penninginsamlingstillstånd i Finland. Ristin Tuki samlar in pengar även för svenskspråkig kristen mediaverksamhet. Föreningen fungerar som innehållsproducent för Heaven TV7-kanalerna, därmed även för Himlen TV7. Styrelseordförande är Martti Ojares. Verksamhetsledare är Maarit Korhonen.</string>
+
+    <string name="copyright">Copyright Himlen TV7. Unauthorized publication of programs or subtitles is prohibited.</string>
 </resources>
