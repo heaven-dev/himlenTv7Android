@@ -22,6 +22,7 @@ import sv.tv7.himlentv7.helpers.Utils;
 import static sv.tv7.himlentv7.helpers.Constants.CAPTION;
 import static sv.tv7.himlentv7.helpers.Constants.EMPTY;
 import static sv.tv7.himlentv7.helpers.Constants.IMAGE_PATH;
+import static sv.tv7.himlentv7.helpers.Constants.NULL_VALUE;
 import static sv.tv7.himlentv7.helpers.Constants.SERIES;
 import static sv.tv7.himlentv7.helpers.Constants.SERIES_AND_NAME;
 import static sv.tv7.himlentv7.helpers.Constants.TYPE;
@@ -99,11 +100,11 @@ public class FavoritesGridAdapter extends RecyclerView.Adapter<FavoritesGridAdap
             if (obj != null) {
 
                 String value = Utils.getValue(obj, IMAGE_PATH);
-                if (value != null) {
+                if (value != null && !value.equals(EMPTY) && !value.equals(NULL_VALUE)) {
                     Glide.with(context).asBitmap().load(value).into(holder.favoriteImage);
                 }
                 else {
-                    Glide.with(context).asBitmap().load(R.drawable.tv7_app_icon).into(holder.favoriteImage);
+                    Glide.with(context).asBitmap().load(R.drawable.fallback).into(holder.favoriteImage);
                 }
 
                 int imageSrc = 0;
