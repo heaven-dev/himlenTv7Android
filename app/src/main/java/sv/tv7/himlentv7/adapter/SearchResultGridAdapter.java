@@ -21,6 +21,7 @@ import sv.tv7.himlentv7.helpers.Utils;
 
 import static sv.tv7.himlentv7.helpers.Constants.CAPTION;
 import static sv.tv7.himlentv7.helpers.Constants.EMPTY;
+import static sv.tv7.himlentv7.helpers.Constants.ID_NULL;
 import static sv.tv7.himlentv7.helpers.Constants.IMAGE_PATH;
 import static sv.tv7.himlentv7.helpers.Constants.NULL_VALUE;
 import static sv.tv7.himlentv7.helpers.Constants.SERIES;
@@ -102,7 +103,7 @@ public class SearchResultGridAdapter extends RecyclerView.Adapter<SearchResultGr
             if (obj != null) {
 
                 String value = Utils.getValue(obj, IMAGE_PATH);
-                if (value != null && !value.equals(EMPTY) && !value.equals(NULL_VALUE)) {
+                if (value != null && !value.equals(EMPTY) && !value.equals(NULL_VALUE) && !value.contains(ID_NULL)) {
                     Glide.with(context).asBitmap().load(value).into(holder.searchResultImage);
                 }
                 else {

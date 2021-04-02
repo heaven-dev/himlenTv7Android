@@ -22,6 +22,7 @@ import sv.tv7.himlentv7.helpers.Utils;
 import static sv.tv7.himlentv7.helpers.Constants.BROADCAST_DATE_TIME;
 import static sv.tv7.himlentv7.helpers.Constants.DURATION;
 import static sv.tv7.himlentv7.helpers.Constants.EMPTY;
+import static sv.tv7.himlentv7.helpers.Constants.ID_NULL;
 import static sv.tv7.himlentv7.helpers.Constants.IMAGE_PATH;
 import static sv.tv7.himlentv7.helpers.Constants.NULL_VALUE;
 import static sv.tv7.himlentv7.helpers.Constants.SERIES_AND_NAME;
@@ -80,7 +81,7 @@ public class ArchiveMainProgramGridAdapter extends RecyclerView.Adapter<ArchiveM
             JSONObject obj = elements.getJSONObject(position);
             if (obj != null) {
                 String imagePath = Utils.getValue(obj, IMAGE_PATH);
-                if (imagePath != null && !imagePath.equals(EMPTY) && !imagePath.equals(NULL_VALUE)) {
+                if (imagePath != null && !imagePath.equals(EMPTY) && !imagePath.equals(NULL_VALUE) && !imagePath.contains(ID_NULL)) {
                     Glide.with(context).asBitmap().load(imagePath).into(holder.programImage);
                 }
                 else {

@@ -1,3 +1,11 @@
+# 01.04.2021 12:34
+
+### Bug Fixes
+
+* Added id=null check to image URLs.
+* New version 11.
+
+
 # 17.03.2021 09:03
 
 ### Bug Fixes
