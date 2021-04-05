@@ -32,6 +32,7 @@ import sv.tv7.himlentv7.helpers.Sidebar;
 import sv.tv7.himlentv7.helpers.Utils;
 import sv.tv7.himlentv7.model.SharedCacheViewModel;
 
+import static sv.tv7.himlentv7.helpers.Constants.ARCHIVE_MAIN_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.ARCHIVE_PLAYER_FRAGMENT;
 import static sv.tv7.himlentv7.helpers.Constants.ASPECT_RATIO;
 import static sv.tv7.himlentv7.helpers.Constants.ASPECT_RATIO_16_9;
@@ -426,9 +427,11 @@ public class ProgramInfoFragment extends Fragment {
                 }
                 else {
                     String toPage = sharedCacheViewModel.getPageFromHistory();
-                    if (toPage != null) {
-                        Utils.toPage(toPage, getActivity(), true, false,null);
+                    if (toPage == null) {
+                        toPage = ARCHIVE_MAIN_FRAGMENT;
                     }
+
+                    Utils.toPage(toPage, getActivity(), true, false,null);
                 }
             }
         }
