@@ -50,7 +50,6 @@
 
     <string name="app_package_title">App package:</string>
     <string name="app_version_title">App version:</string>
-    <string name="app_build_time">App built:</string>
     <string name="os_version_title">OS version:</string>
     <string name="os_api_level_title">OS API level:</string>
     <string name="android_version_title">Android version:</string>
@@ -61,6 +60,7 @@
     <string name="no_network_connection">No network connection :-(</string>
     <string name="network_request_failed">Network request failed :-(</string>
     <string name="network_request_timeout">Network request timeout :-(</string>
+    <string name="restart">Restart</string>
     <string name="close">Close</string>
 
     <string name="title_1">Om oss</string>
@@ -78,5 +78,5 @@
     <string name="title_4">Ristin Tuki ry (rf)</string>
     <string name="title_4_chapter_1">Ristin Tuki ry (rf) är en ideell registrerad förening med nationellt penninginsamlingstillstånd i Finland. Ristin Tuki samlar in pengar även för svenskspråkig kristen mediaverksamhet. Föreningen fungerar som innehållsproducent för Heaven TV7-kanalerna, därmed även för Himlen TV7. Styrelseordförande är Martti Ojares. Verksamhetsledare är Maarit Korhonen.</string>
 
-    <string name="copyright">Copyright Himlen TV7. Unauthorized publication of programs or subtitles is prohibited.</string>
+    <string name="copyright">Copyright © Himlen TV7. Unauthorized publication of programs or subtitles is prohibited.</string>
 </resources>

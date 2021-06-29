@@ -1,3 +1,13 @@
+# 29.06.2021 18:25
+
+### Bug Fixes
+* Added restart button to the error page.
+* Removed app built time from the about fragment.
+
+### Features
+* New version 18.
+
+
 # 10.06.2021 12:53
 
 ### Bug Fixes
