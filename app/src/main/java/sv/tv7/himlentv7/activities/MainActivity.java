@@ -35,6 +35,7 @@ import sv.tv7.himlentv7.fragments.ProgramInfoFragment;
 import sv.tv7.himlentv7.fragments.SearchFragment;
 import sv.tv7.himlentv7.fragments.SearchResultFragment;
 import sv.tv7.himlentv7.fragments.SeriesFragment;
+import sv.tv7.himlentv7.fragments.SeriesInfoFragment;
 import sv.tv7.himlentv7.fragments.TvMainFragment;
 import sv.tv7.himlentv7.fragments.TvPlayerFragment;
 import sv.tv7.himlentv7.helpers.GuideItem;
@@ -164,6 +165,10 @@ public class MainActivity extends AppCompatActivity implements ArchiveDataLoaded
                     // Program info fragment visible
                     return ((ProgramInfoFragment) fragment).onKeyDown(keyCode, events);
                 }
+                else if (fragment instanceof SeriesInfoFragment) {
+                    // Series info fragment visible
+                    return ((SeriesInfoFragment) fragment).onKeyDown(keyCode, events);
+                }
                 else if (fragment instanceof CategoriesFragment) {
                     // Categories fragment visible
                     return ((CategoriesFragment) fragment).onKeyDown(keyCode, events);
@@ -257,6 +262,8 @@ public class MainActivity extends AppCompatActivity implements ArchiveDataLoaded
                     }
                     else {
                         this.addGuideData(guideData);
+
+                        archiveViewModel.initializeSeriesData(guideViewModel.getGuide());
 
                         this.prepareUi();
                         Utils.toPage(TV_MAIN_FRAGMENT, this, false, false, null);

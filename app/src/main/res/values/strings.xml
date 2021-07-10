@@ -32,6 +32,7 @@
     <string name="categories">Kategorier</string>
     <string name="category">Kategori</string>
     <string name="series">Programserie</string>
+    <string name="topical_series">Aktuella serier</string>
 
     <string name="first_broadcast">Första sändningen</string>
     <string name="duration">Längd</string>
