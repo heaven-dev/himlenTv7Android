@@ -63,6 +63,15 @@
     <string name="network_request_timeout">Network request timeout :-(</string>
     <string name="restart">Restart</string>
     <string name="close">Close</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="delete_configurations">Delete configurations</string>
+    <string name="video_status">Video status</string>
+    <string name="favorites_eng">Favorites</string>
+    <string name="search_history">Search history</string>
+    <string name="items">items</string>
+    <string name="delete_configuration_question">Delete configuration?</string>
 
     <string name="title_1">Om oss</string>
     <string name="title_1_chapter_1">Himlen TV7 är en kristen tv-kanal med bas i Uppsala som riktar sig till Sverige och Svenskfinland. Kanalen sänder 24/7 och erbjuder det största kristna Play-arkivet på svenska med tusentals program att se när du vill. Kanalen vill berätta om Jesus, utrusta Guds folk med Hans Ord och stärka banden till Israel genom nyheter och undervisning. Kanalen är öppen för alla och kan ses på www.himlentv7.se eller gratisappen ”Himlen TV7”, och är nu även tillgänglig på Smart-TV. I Finland finns den även på flera kabeltv-nätverk.</string>
