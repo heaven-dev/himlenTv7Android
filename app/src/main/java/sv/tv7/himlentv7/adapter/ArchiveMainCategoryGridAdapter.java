@@ -17,7 +17,6 @@ import org.json.JSONObject;
 import sv.tv7.himlentv7.R;
 import sv.tv7.himlentv7.helpers.Utils;
 
-import static sv.tv7.himlentv7.helpers.Constants.BACK_TEXT;
 import static sv.tv7.himlentv7.helpers.Constants.CATEGORY_IMAGE_SIZE_IN_PERCENT;
 import static sv.tv7.himlentv7.helpers.Constants.CATEGORY_NAME;
 import static sv.tv7.himlentv7.helpers.Constants.NAME;
@@ -45,7 +44,6 @@ public class ArchiveMainCategoryGridAdapter extends RecyclerView.Adapter<Archive
         public LinearLayout backItem = null;
         public ImageView categoryImage = null;
         public TextView categoryText = null;
-        public TextView backText = null;
 
         public SimpleViewHolder(View view) {
             super(view);
@@ -56,7 +54,6 @@ public class ArchiveMainCategoryGridAdapter extends RecyclerView.Adapter<Archive
 
             categoryImage = view.findViewById(R.id.categoryImage);
             categoryText = view.findViewById(R.id.categoryText);
-            backText = view.findViewById(R.id.backText);
 
             // Calculate and set element width
             int elementWidth = Utils.dpToPx(calculateItemWidth());
@@ -83,10 +80,8 @@ public class ArchiveMainCategoryGridAdapter extends RecyclerView.Adapter<Archive
 
                 boolean isBackElement = false;
                 if (categoryText == null) {
-                    categoryText = Utils.getJsonStringValue(obj, BACK_TEXT);
                     isBackElement = true;
                 }
-
 
                 if (!isBackElement) {
                     holder.categoryText.setText(categoryText);
@@ -101,8 +96,6 @@ public class ArchiveMainCategoryGridAdapter extends RecyclerView.Adapter<Archive
                     setImageWidth(holder, imageWidth);
                 }
                 else {
-                    holder.backText.setText(categoryText);
-
                     holder.categoryItem.setVisibility(View.GONE);
                     holder.backItem.setVisibility(View.VISIBLE);
 
